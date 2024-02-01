@@ -1,0 +1,32 @@
+﻿<Window x:Class="Automat_Studentska_Služba.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Automat_Studentska_Služba"
+        mc:Ignorable="d"
+        Title="Logovanje" Height="450" Width="400"
+        WindowStartupLocation="CenterScreen">
+    <Window.Icon>
+        <BitmapImage UriSource="Slike/logo.ico"/>
+    </Window.Icon>
+    <StackPanel>
+        <Grid Background="DarkBlue" Height="50">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="Državni univerzitet u Novom Pazaru" Grid.Column="1" 
+                           Foreground="White" Margin="0 15 0 0" FontSize="15" TextAlignment="Center"></TextBlock>
+        </Grid>
+        <Image Height="150" Source="Slike/dunp_logo.png"/>
+        <TextBlock Text="Korisničko ime:" Margin="50 10 50 0" FontSize="13"></TextBlock>
+        <TextBox Name="txtUsername" Margin="50 0 50 0" Padding="2"></TextBox>
+        <TextBlock Text="Lozinka:" Margin="50 10 50 0" FontSize="13"></TextBlock>
+        <PasswordBox Name="txtPassword" Margin="50 0 50 0" Padding="2"></PasswordBox>
+        <Button Background="DarkBlue" Content="Prijavi se" Foreground="White"
+                Margin="150 30 150 0" Padding="5" FontSize="14" Click="Login_Click"></Button>
+    </StackPanel>
+</Window>

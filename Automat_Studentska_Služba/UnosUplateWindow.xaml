@@ -1,0 +1,32 @@
+﻿<Window x:Class="Automat_Studentska_Služba.UnosUplateWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Automat_Studentska_Služba"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="Unos uplate" Height="250" Width="350"
+        WindowStartupLocation="CenterScreen">
+    <Window.Icon>
+        <BitmapImage UriSource="Slike/logo.ico"/>
+    </Window.Icon>
+    <Grid>
+        <StackPanel Background="#F1A352">
+            <TextBlock Text="Unesite uplatu:" FontSize="15" Margin="0 20 0 0" HorizontalAlignment="Center" FontWeight="Medium"/>
+            <xctk:IntegerUpDown x:Name="integerUpDown" Minimum="300" Value="300" Margin="50 15 50 20"
+                                FontSize="20"/>
+            <ComboBox Name="cmbVrstaUplate" Margin="50 0 50 0" FontSize="18">
+                <ComboBoxItem Content="Prijava ispita"/>
+                <ComboBoxItem Content="Prijava školarina"/>
+            </ComboBox>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 20 0 0">
+                <Button Content="Potvrdi" Click="Potvrdi_Click" BorderBrush="White" Background="Green" 
+                        Foreground="White" FontSize="15" FontWeight="Medium" Margin="0 0 20 0" Padding="10 5 10 5"/>
+                <Button Content="Odustani" Click="Odustani_Click" BorderBrush="White" Background="Red" 
+                        Foreground="White" FontSize="15" FontWeight="Medium" Padding="10 5 10 5"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

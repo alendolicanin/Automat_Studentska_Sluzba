@@ -1,0 +1,9 @@
+﻿<Application x:Class="Automat_Studentska_Služba.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Automat_Studentska_Služba"
+             StartupUri="Login.xaml">
+    <Application.Resources>
+
+    </Application.Resources>
+</Application>
